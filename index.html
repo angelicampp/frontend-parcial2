@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <script src="js/auth.js"></script>
+</head>
+<body>
+    <script>
+        // redirige según el estado de autenticación
+        if (checkAuthentication()) {
+            window.location.href = 'todo.html';
+        } else {
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
