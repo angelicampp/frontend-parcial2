@@ -1,0 +1,141 @@
+/* Fondo con degradado */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f6d5f7, #c6e6f5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+/* Input y botón agregar */
+#taskInput {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  margin-right: 5px;
+}
+
+#addBtn {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#addBtn:hover {
+  opacity: 0.9;
+}
+
+/* Lista de tareas */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#taskList li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; 
+}
+
+
+#taskList li span {
+  flex: 1; 
+  word-wrap: break-word;   
+  overflow-wrap: anywhere; 
+  max-width: 70%;          
+}
+
+/* Grupo de botones */
+.btn-group {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0; 
+}
+
+/* Botones */
+.done-btn {
+  background: #87e28c; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #aad1f0; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #fcabab;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.done-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+#taskList button:hover {
+  opacity: 0.8;
+}
+
+
+/* Botón logout */
+#logout-btn {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#logout-btn:hover {
+  opacity: 0.9;
+}

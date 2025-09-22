@@ -7,7 +7,7 @@ function checkAuthentication() {
 
 function redirectBasedOnAuth() {
     if (checkAuthentication()) {
-        window.location.href = 'todo.html';
+        window.location.href = './todo.html';
     }
 }
 
@@ -19,5 +19,5 @@ function validateCredentials(username, password) {
 
 function logout() {
     localStorage.removeItem('isAuthenticated');
-    window.location.href = 'login.html';
+    window.location.href = './login.html';
 }
